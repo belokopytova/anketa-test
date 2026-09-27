@@ -1,6 +1,6 @@
 # Описание
 
-Веб-приложение для управления пользователями. 
+Веб-приложение для заполнения анкеты на выставке
 
 ### Стек
 
@@ -11,6 +11,9 @@
 - **SQLite** — база данных по умолчанию (можно заменить на PostgreSQL/MySQL)
 
 ## Структура файлов
+
+<details>
+<summary><b>Структура проекта</b></summary>
 
 ```
 anketa-app/
@@ -29,12 +32,14 @@ anketa-app/
 │   │   └── urls.py             # APIRouter и маршруты /users
 │   └── utils/
 │       ├── __init__.py
+        ├── excel.py            # функции для работы с Excel
 │       └── exceptions.py       # Обработчики ошибок
 ├── db/
 │   ├── __init__.py
 │   ├── database.py             # Инициализация БД
 │   └── session.py              # Сессия SQLAlchemy
 ├── templates/
+|   ├──surveys.html             # Страница с анкетами
 │   └── index.html              # Главная страница
 └── static/
     ├── css/
@@ -45,6 +50,8 @@ anketa-app/
             └── userApi.js      # Запросы к API пользователей
 
 ```
+
+</details>
 
 ## Настройка и запуск
 
