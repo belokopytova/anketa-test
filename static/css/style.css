@@ -1,0 +1,55 @@
+/* Фон страницы */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Карточка с анкетой */
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.card-title {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Стили формы анкеты */
+#surveyForm .form-control:focus,
+#surveyForm .form-select:focus {
+    border-color: #4d7cc3;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+#surveyForm .is-invalid {
+    border-color: #dc3545;
+}
+
+#surveyForm .is-invalid:focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.15);
+}
+
+/* Чекбоксы*/
+#surveyForm .form-check {
+    margin-bottom: 0.25rem;
+}
+
+/* Сообщения об успехе / ошибке */
+.alert {
+    border-radius: 8px;
+    border: none;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .card-body {
+        padding: 1rem !important;
+    }
+    .btn-lg {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+}

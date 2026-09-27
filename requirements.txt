@@ -1,0 +1,12 @@
+fastapi==0.115.8
+uvicorn[standard]==0.34.0
+python-dotenv==1.2.3
+SQLAlchemy==2.0.52
+Jinja2==3.1.6
+fastapi
+uvicorn[standard]
+jinja2
+sqlalchemy
+pydantic[email]
+python-dotenv
+openpyxl==3.1.5
